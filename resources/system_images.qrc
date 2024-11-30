@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="default_images">
+    <file>icons/search_icon.png</file>
+    <file>icons/588a6507d06f6719692a2d15.png</file>
+    <file>icons/delete-removebg-preview.png</file>
+    <file>icons/discord-removebg-preview.png</file>
+    <file>icons/eye-closed-icon.png</file>
+    <file>icons/eye-open-icon.png</file>
+    <file>icons/filter-icon-25237.png</file>
+    <file>icons/pen-removebg-preview.png</file>
+    <file>icons/three-dots-vertical_1.png</file>
+    <file>icons/twitch-removebg-preview.png</file>
+    <file>images/user.png</file>
+    <file>icons/gamepass logo.png</file>
+    <file>images/system__title.png</file>
+  </qresource>
+</RCC>
