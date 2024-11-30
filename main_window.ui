@@ -21,7 +21,7 @@
    <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="logoicon">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -43,7 +43,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_11">
+   <widget class="QPushButton" name="threedoticon">
     <property name="geometry">
      <rect>
       <x>1240</x>
@@ -207,7 +207,7 @@ border-radius: 20px
           </spacer>
          </item>
          <item row="0" column="1" colspan="3">
-          <widget class="QPushButton" name="pushButton">
+          <widget class="QPushButton" name="featured_button">
            <property name="minimumSize">
             <size>
              <width>181</width>
@@ -271,7 +271,7 @@ border- radius: 10px</string>
          <item row="2" column="2">
           <layout class="QVBoxLayout" name="verticalLayout">
            <item>
-            <widget class="QPushButton" name="pushButton_2">
+            <widget class="QPushButton" name="action_button">
              <property name="minimumSize">
               <size>
                <width>131</width>
@@ -294,7 +294,7 @@ border- radius: 10px</string>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_3">
+            <widget class="QPushButton" name="roleplayinggame_button">
              <property name="minimumSize">
               <size>
                <width>131</width>
@@ -317,7 +317,7 @@ border- radius: 10px</string>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_4">
+            <widget class="QPushButton" name="openworld_button">
              <property name="minimumSize">
               <size>
                <width>131</width>
@@ -340,7 +340,7 @@ border- radius: 10px</string>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_5">
+            <widget class="QPushButton" name="scifi_button">
              <property name="minimumSize">
               <size>
                <width>131</width>
@@ -363,7 +363,7 @@ border- radius: 10px</string>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_6">
+            <widget class="QPushButton" name="horror_button">
              <property name="minimumSize">
               <size>
                <width>131</width>
@@ -386,7 +386,7 @@ border- radius: 10px</string>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_7">
+            <widget class="QPushButton" name="thirdperson_button">
              <property name="minimumSize">
               <size>
                <width>131</width>
@@ -409,7 +409,7 @@ border- radius: 10px</string>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_8">
+            <widget class="QPushButton" name="adventure_button">
              <property name="minimumSize">
               <size>
                <width>131</width>
@@ -432,7 +432,7 @@ border- radius: 10px</string>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_9">
+            <widget class="QPushButton" name="fantasy_button">
              <property name="minimumSize">
               <size>
                <width>131</width>
@@ -455,7 +455,7 @@ border- radius: 10px</string>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_10">
+            <widget class="QPushButton" name="sandbox_button">
              <property name="minimumSize">
               <size>
                <width>131</width>
@@ -497,7 +497,7 @@ border- radius: 10px</string>
       </widget>
      </item>
      <item>
-      <widget class="QStackedWidget" name="stackedWidget">
+      <widget class="QStackedWidget" name="stackwidget">
        <property name="minimumSize">
         <size>
          <width>981</width>
@@ -511,10 +511,10 @@ border- radius: 10px</string>
         </size>
        </property>
        <property name="currentIndex">
-        <number>0</number>
+        <number>8</number>
        </property>
        <widget class="QWidget" name="page">
-        <widget class="QLabel" name="label_2">
+        <widget class="QLabel" name="allgames_center_label">
          <property name="geometry">
           <rect>
            <x>470</x>
@@ -529,7 +529,7 @@ border- radius: 10px</string>
         </widget>
        </widget>
        <widget class="QWidget" name="page_2">
-        <widget class="QLabel" name="label_3">
+        <widget class="QLabel" name="action_center_label">
          <property name="geometry">
           <rect>
            <x>470</x>
@@ -544,7 +544,7 @@ border- radius: 10px</string>
         </widget>
        </widget>
        <widget class="QWidget" name="page_3">
-        <widget class="QLabel" name="label_4">
+        <widget class="QLabel" name="roleplayinggame_center_label">
          <property name="geometry">
           <rect>
            <x>430</x>
@@ -559,7 +559,7 @@ border- radius: 10px</string>
         </widget>
        </widget>
        <widget class="QWidget" name="page_4">
-        <widget class="QLabel" name="label_5">
+        <widget class="QLabel" name="openwolrd_center_label">
          <property name="geometry">
           <rect>
            <x>490</x>
@@ -574,7 +574,7 @@ border- radius: 10px</string>
         </widget>
        </widget>
        <widget class="QWidget" name="page_5">
-        <widget class="QLabel" name="label_6">
+        <widget class="QLabel" name="scifi_center_label">
          <property name="geometry">
           <rect>
            <x>450</x>
@@ -589,7 +589,7 @@ border- radius: 10px</string>
         </widget>
        </widget>
        <widget class="QWidget" name="page_6">
-        <widget class="QLabel" name="label_7">
+        <widget class="QLabel" name="horror_center_label">
          <property name="geometry">
           <rect>
            <x>400</x>
@@ -604,7 +604,7 @@ border- radius: 10px</string>
         </widget>
        </widget>
        <widget class="QWidget" name="page_7">
-        <widget class="QLabel" name="label_8">
+        <widget class="QLabel" name="thirdperson_center_label">
          <property name="geometry">
           <rect>
            <x>440</x>
@@ -619,7 +619,7 @@ border- radius: 10px</string>
         </widget>
        </widget>
        <widget class="QWidget" name="page_8">
-        <widget class="QLabel" name="label_9">
+        <widget class="QLabel" name="adventure_center_label">
          <property name="geometry">
           <rect>
            <x>490</x>
@@ -634,7 +634,7 @@ border- radius: 10px</string>
         </widget>
        </widget>
        <widget class="QWidget" name="page_9">
-        <widget class="QLabel" name="label_10">
+        <widget class="QLabel" name="fantasy_center_label">
          <property name="geometry">
           <rect>
            <x>510</x>
@@ -649,7 +649,7 @@ border- radius: 10px</string>
         </widget>
        </widget>
        <widget class="QWidget" name="page_10">
-        <widget class="QLabel" name="label_11">
+        <widget class="QLabel" name="sandbox_center_label">
          <property name="geometry">
           <rect>
            <x>440</x>

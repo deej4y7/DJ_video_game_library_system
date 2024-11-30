@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>admindashboard_mainwindow</class>
+ <widget class="QMainWindow" name="admindashboard_mainwindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -122,7 +122,7 @@ border-radius: 10px;
      <string/>
     </property>
    </widget>
-   <widget class="QWidget" name="widget" native="true">
+   <widget class="QWidget" name="yellow_adminpublisher_container" native="true">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -134,7 +134,7 @@ border-radius: 10px;
     <property name="styleSheet">
      <string notr="true">background-color: rgb(253, 183, 69);</string>
     </property>
-    <widget class="QLabel" name="label_7">
+    <widget class="QLabel" name="adminpublishertitle_uppermiddle">
      <property name="geometry">
       <rect>
        <x>310</x>
@@ -153,7 +153,7 @@ shadow.setBlurRadius(15)</string>
      </property>
     </widget>
    </widget>
-   <widget class="QWidget" name="MainWidget" native="true">
+   <widget class="QWidget" name="white_gamemanagement_container" native="true">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -167,7 +167,7 @@ shadow.setBlurRadius(15)</string>
 background-color: rgb(255, 255, 255);
 </string>
     </property>
-    <widget class="QLabel" name="gamemanagemen">
+    <widget class="QLabel" name="gamemanagement_left_title">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -184,7 +184,7 @@ color: rgb(116, 116, 116);</string>
       <string>GAME MANAGEMENT</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="addgamebutton">
+    <widget class="QPushButton" name="addgame_button">
      <property name="geometry">
       <rect>
        <x>50</x>
@@ -205,7 +205,7 @@ border-radius: 15px;</string>
       <string>ADD GAME</string>
      </property>
      <property name="icon">
-      <iconset resource="../video_game_library_system/resources/images.qrc">
+      <iconset>
        <normaloff>:/dashboard_icons/icons/pen-removebg-preview.png</normaloff>:/dashboard_icons/icons/pen-removebg-preview.png</iconset>
      </property>
      <property name="checkable">
@@ -215,7 +215,7 @@ border-radius: 15px;</string>
       <bool>false</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="removegamebutton">
+    <widget class="QPushButton" name="removegame_button">
      <property name="geometry">
       <rect>
        <x>50</x>
@@ -246,7 +246,7 @@ border-radius: 15px;</string>
       <bool>false</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="automaticbutton">
+    <widget class="QPushButton" name="featuregame_button">
      <property name="geometry">
       <rect>
        <x>50</x>
@@ -277,7 +277,7 @@ border-radius: 15px;</string>
       <bool>false</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="automaticbutton_2">
+    <widget class="QPushButton" name="logout_button">
      <property name="geometry">
       <rect>
        <x>50</x>
@@ -304,7 +304,7 @@ border-radius: 15px;</string>
       <bool>false</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="automaticbutton_3">
+    <widget class="QPushButton" name="unfeaturegame_button">
      <property name="geometry">
       <rect>
        <x>50</x>
@@ -335,7 +335,7 @@ border-radius: 15px;</string>
       <bool>false</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="removegamebutton_2">
+    <widget class="QPushButton" name="searchgame_button">
      <property name="geometry">
       <rect>
        <x>50</x>
@@ -356,7 +356,7 @@ border-radius: 15px;</string>
       <string>SEARCH GAME</string>
      </property>
      <property name="icon">
-      <iconset resource="resources/system_images.qrc">
+      <iconset>
        <normaloff>:/default_images/icons/search_icon.png</normaloff>:/default_images/icons/search_icon.png</iconset>
      </property>
      <property name="checkable">
@@ -367,7 +367,7 @@ border-radius: 15px;</string>
      </property>
     </widget>
    </widget>
-   <widget class="QTableView" name="tableView">
+   <widget class="QTableView" name="gamemanagement_table">
     <property name="geometry">
      <rect>
       <x>310</x>
@@ -377,7 +377,7 @@ border-radius: 15px;</string>
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="title_lineedit">
     <property name="geometry">
      <rect>
       <x>550</x>
@@ -387,7 +387,7 @@ border-radius: 15px;</string>
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="title_gamemanagement">
     <property name="geometry">
      <rect>
       <x>480</x>
@@ -406,7 +406,7 @@ border-radius: 15px;</string>
      <string>Title:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="releasedate_gamemanagement">
     <property name="geometry">
      <rect>
       <x>480</x>
@@ -425,7 +425,7 @@ border-radius: 15px;</string>
      <string>Release Date:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="releasedate_lineedit">
     <property name="geometry">
      <rect>
       <x>570</x>
@@ -438,7 +438,7 @@ border-radius: 15px;</string>
      <string>yyyy-mm-dd</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="developer_gamemanagement">
     <property name="geometry">
      <rect>
       <x>480</x>
@@ -457,7 +457,7 @@ border-radius: 15px;</string>
      <string>Developer:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="publisher_gamemanagement">
     <property name="geometry">
      <rect>
       <x>480</x>
@@ -476,7 +476,7 @@ border-radius: 15px;</string>
      <string>Publisher:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
+   <widget class="QLineEdit" name="developer_lineedit">
     <property name="geometry">
      <rect>
       <x>550</x>
@@ -486,7 +486,7 @@ border-radius: 15px;</string>
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_4">
+   <widget class="QLineEdit" name="publisher_lineedit">
     <property name="geometry">
      <rect>
       <x>550</x>
@@ -496,7 +496,7 @@ border-radius: 15px;</string>
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
+   <widget class="QLabel" name="filesize_gamemanagement">
     <property name="geometry">
      <rect>
       <x>480</x>
@@ -515,7 +515,7 @@ border-radius: 15px;</string>
      <string>File Size:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_5">
+   <widget class="QLineEdit" name="filesize_lineedit">
     <property name="geometry">
      <rect>
       <x>550</x>
@@ -531,19 +531,19 @@ border-radius: 15px;</string>
    <zorder>upperusericon</zorder>
    <zorder>upperusername</zorder>
    <zorder>dotssettingicon</zorder>
-   <zorder>MainWidget</zorder>
-   <zorder>widget</zorder>
-   <zorder>tableView</zorder>
-   <zorder>lineEdit</zorder>
-   <zorder>label</zorder>
-   <zorder>label_2</zorder>
-   <zorder>lineEdit_2</zorder>
-   <zorder>label_3</zorder>
-   <zorder>label_4</zorder>
-   <zorder>lineEdit_3</zorder>
-   <zorder>lineEdit_4</zorder>
-   <zorder>label_5</zorder>
-   <zorder>lineEdit_5</zorder>
+   <zorder>white_gamemanagement_container</zorder>
+   <zorder>yellow_adminpublisher_container</zorder>
+   <zorder>gamemanagement_table</zorder>
+   <zorder>title_lineedit</zorder>
+   <zorder>title_gamemanagement</zorder>
+   <zorder>releasedate_gamemanagement</zorder>
+   <zorder>releasedate_lineedit</zorder>
+   <zorder>developer_gamemanagement</zorder>
+   <zorder>publisher_gamemanagement</zorder>
+   <zorder>developer_lineedit</zorder>
+   <zorder>publisher_lineedit</zorder>
+   <zorder>filesize_gamemanagement</zorder>
+   <zorder>filesize_lineedit</zorder>
   </widget>
  </widget>
  <resources>
