@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Login_Window</class>
- <widget class="QMainWindow" name="Login_Window">
+ <class>loginregister_mainwindow</class>
+ <widget class="QMainWindow" name="loginregister_mainwindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -33,7 +33,7 @@
    <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QStackedWidget" name="stackedWidget">
+   <widget class="QStackedWidget" name="loginregister_widget">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -43,7 +43,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="login_page">
      <widget class="QWidget" name="layoutWidget">
@@ -95,7 +95,7 @@
         </spacer>
        </item>
        <item>
-        <widget class="QWidget" name="widget" native="true">
+        <widget class="QWidget" name="yellow_container_login" native="true">
          <property name="minimumSize">
           <size>
            <width>421</width>
@@ -112,7 +112,10 @@
           <string notr="true">background-color: rgb(252, 183, 68);
 border-radius: 20px;</string>
          </property>
-         <widget class="QLabel" name="label">
+         <widget class="QLabel" name="logintitle_login">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
           <property name="geometry">
            <rect>
             <x>120</x>
@@ -157,7 +160,7 @@ border-radius: 20px;</string>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout">
            <item>
-            <widget class="QPushButton" name="pushButton">
+            <widget class="QPushButton" name="back_button_login">
              <property name="minimumSize">
               <size>
                <width>111</width>
@@ -190,7 +193,7 @@ border-radius: 20px;</string>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_2">
+            <widget class="QPushButton" name="enter_button_login">
              <property name="minimumSize">
               <size>
                <width>101</width>
@@ -223,7 +226,7 @@ border-radius: 20px;</string>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_3">
+            <widget class="QPushButton" name="register_button_login">
              <property name="minimumSize">
               <size>
                <width>91</width>
@@ -266,7 +269,7 @@ border-radius: 20px;</string>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_2">
            <item>
-            <widget class="QLabel" name="label_2">
+            <widget class="QLabel" name="usernametitle_login">
              <property name="minimumSize">
               <size>
                <width>91</width>
@@ -296,7 +299,7 @@ border-radius: 20px;</string>
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="lineEdit">
+            <widget class="QLineEdit" name="username_lineedit_login">
              <property name="minimumSize">
               <size>
                <width>241</width>
@@ -321,7 +324,7 @@ border-radius: 20px;</string>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_3">
            <item>
-            <widget class="QLabel" name="label_3">
+            <widget class="QLabel" name="passwordtitle_login">
              <property name="minimumSize">
               <size>
                <width>91</width>
@@ -351,7 +354,7 @@ border-radius: 20px;</string>
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="lineEdit_2">
+            <widget class="QLineEdit" name="password_lineedit_login">
              <property name="minimumSize">
               <size>
                <width>241</width>
@@ -374,7 +377,7 @@ border-radius: 20px;</string>
            </item>
           </layout>
          </widget>
-         <widget class="QPushButton" name="pushButton_6">
+         <widget class="QPushButton" name="showpassword_button_login">
           <property name="geometry">
            <rect>
             <x>280</x>
@@ -445,7 +448,7 @@ border-radius: 20px;</string>
         </spacer>
        </item>
        <item>
-        <widget class="QWidget" name="widget_2" native="true">
+        <widget class="QWidget" name="yellow_container_register" native="true">
          <property name="minimumSize">
           <size>
            <width>421</width>
@@ -462,7 +465,7 @@ border-radius: 20px;</string>
           <string notr="true">background-color: rgb(252, 183, 68);
 border-radius: 20px;</string>
          </property>
-         <widget class="QLabel" name="label_4">
+         <widget class="QLabel" name="regitertitle_register">
           <property name="geometry">
            <rect>
             <x>120</x>
@@ -507,7 +510,7 @@ border-radius: 20px;</string>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_4">
            <item>
-            <widget class="QPushButton" name="pushButton_4">
+            <widget class="QPushButton" name="back_button_register">
              <property name="minimumSize">
               <size>
                <width>111</width>
@@ -540,7 +543,7 @@ border-radius: 20px;</string>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_5">
+            <widget class="QPushButton" name="enter_button_register">
              <property name="minimumSize">
               <size>
                <width>101</width>
@@ -585,7 +588,7 @@ border-radius: 20px;</string>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_5">
            <item>
-            <widget class="QLabel" name="label_5">
+            <widget class="QLabel" name="usernametitle_register">
              <property name="minimumSize">
               <size>
                <width>91</width>
@@ -615,7 +618,7 @@ border-radius: 20px;</string>
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="lineEdit_3">
+            <widget class="QLineEdit" name="username_lineedit_register">
              <property name="minimumSize">
               <size>
                <width>241</width>
@@ -640,7 +643,7 @@ border-radius: 20px;</string>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_6">
            <item>
-            <widget class="QLabel" name="label_6">
+            <widget class="QLabel" name="passwordtitle_register">
              <property name="minimumSize">
               <size>
                <width>91</width>
@@ -670,7 +673,7 @@ border-radius: 20px;</string>
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="lineEdit_4">
+            <widget class="QLineEdit" name="password_lineedit_register">
              <property name="minimumSize">
               <size>
                <width>241</width>
@@ -701,7 +704,7 @@ border-radius: 20px;</string>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_7">
            <item>
-            <widget class="QLabel" name="label_7">
+            <widget class="QLabel" name="firstnametitle_register">
              <property name="minimumSize">
               <size>
                <width>91</width>
@@ -731,7 +734,7 @@ border-radius: 20px;</string>
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="lineEdit_5">
+            <widget class="QLineEdit" name="firstname_lineedit_register">
              <property name="minimumSize">
               <size>
                <width>241</width>
@@ -756,7 +759,7 @@ border-radius: 20px;</string>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_8">
            <item>
-            <widget class="QLabel" name="label_8">
+            <widget class="QLabel" name="lastnametitle_register">
              <property name="minimumSize">
               <size>
                <width>91</width>
@@ -786,7 +789,7 @@ border-radius: 20px;</string>
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="lineEdit_6">
+            <widget class="QLineEdit" name="lastname_lineedit_register">
              <property name="minimumSize">
               <size>
                <width>241</width>
@@ -811,7 +814,7 @@ border-radius: 20px;</string>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_9">
            <item>
-            <widget class="QLabel" name="label_9">
+            <widget class="QLabel" name="confirmpasswordtitle_register">
              <property name="minimumSize">
               <size>
                <width>91</width>
@@ -838,7 +841,7 @@ border-radius: 20px;</string>
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="lineEdit_7">
+            <widget class="QLineEdit" name="confirmpassword_lineedit_register">
              <property name="minimumSize">
               <size>
                <width>241</width>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>gamedetails_mainwindow</class>
+ <widget class="QMainWindow" name="gamedetails_mainwindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -21,7 +21,7 @@
    <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="logoicon">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -95,7 +95,7 @@ border-radius: 10px;
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QWidget" name="widget_2" native="true">
+   <widget class="QWidget" name="gray_gamedetails_container" native="true">
     <property name="geometry">
      <rect>
       <x>570</x>
@@ -108,7 +108,7 @@ border-radius: 10px;
      <string notr="true">background-color: rgb(56, 56, 56,160);
 border-radius: 20px;</string>
     </property>
-    <widget class="QPushButton" name="editprofbutton">
+    <widget class="QPushButton" name="downloadnow_button">
      <property name="geometry">
       <rect>
        <x>100</x>
@@ -135,7 +135,7 @@ border-radius: 15px;</string>
       <bool>false</bool>
      </property>
     </widget>
-    <widget class="QLabel" name="label_4">
+    <widget class="QLabel" name="releasedate_gamedetails">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -155,7 +155,7 @@ border: none;
       <string>RELEASE DATE:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_5">
+    <widget class="QLabel" name="developer_gamedetails">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -175,7 +175,7 @@ border: none;
       <string>DEVELOPER:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_6">
+    <widget class="QLabel" name="publisher_gamedetails">
      <property name="geometry">
       <rect>
        <x>20</x>

@@ -7,14 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>963</width>
-    <height>573</height>
+    <height>576</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>DJ Game Pass USER</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="../video_game_library_system/resources/images.qrc">
+   <iconset>
     <normaloff>:/icon/icons/system_icon.png</normaloff>:/icon/icons/system_icon.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -108,7 +108,7 @@ border-image: url(:/default_images/icons/three-dots-vertical_1.png)</string>
      <string/>
     </property>
    </widget>
-   <widget class="QWidget" name="widget" native="true">
+   <widget class="QWidget" name="yellow_container_account" native="true">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -120,7 +120,7 @@ border-image: url(:/default_images/icons/three-dots-vertical_1.png)</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(253, 183, 69);</string>
     </property>
-    <widget class="QLabel" name="label_7">
+    <widget class="QLabel" name="accounttitle_account">
      <property name="geometry">
       <rect>
        <x>310</x>
@@ -139,7 +139,7 @@ shadow.setBlurRadius(15)</string>
      </property>
     </widget>
    </widget>
-   <widget class="QPushButton" name="myccountbutton">
+   <widget class="QPushButton" name="myaccountbutton">
     <property name="geometry">
      <rect>
       <x>18</x>
@@ -175,7 +175,7 @@ font: 14pt &quot;Bahnschrift SemiLight Condensed&quot;;</string>
      <string>Downloaded Games</string>
     </property>
    </widget>
-   <widget class="QStackedWidget" name="stackedWidget">
+   <widget class="QStackedWidget" name="account_container_widget">
     <property name="geometry">
      <rect>
       <x>230</x>
@@ -188,7 +188,7 @@ font: 14pt &quot;Bahnschrift SemiLight Condensed&quot;;</string>
      <number>0</number>
     </property>
     <widget class="QWidget" name="page">
-     <widget class="QWidget" name="MainWidget" native="true">
+     <widget class="QWidget" name="white_accountcontainer_mainwidget" native="true">
       <property name="geometry">
        <rect>
         <x>150</x>
@@ -368,7 +368,7 @@ rgb:(86, 86, 86)</string>
         <string>placeholder_password</string>
        </property>
       </widget>
-      <widget class="QWidget" name="widget_2" native="true">
+      <widget class="QWidget" name="email_pass_confirmpass_widget" native="true">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -428,7 +428,7 @@ rgb:(86, 86, 86)</string>
          <string>Confirm Password:</string>
         </property>
        </widget>
-       <widget class="QLineEdit" name="lineEdit">
+       <widget class="QLineEdit" name="email_lineedit">
         <property name="geometry">
          <rect>
           <x>70</x>
@@ -438,7 +438,7 @@ rgb:(86, 86, 86)</string>
          </rect>
         </property>
        </widget>
-       <widget class="QLineEdit" name="lineEdit_2">
+       <widget class="QLineEdit" name="password_lineedit">
         <property name="geometry">
          <rect>
           <x>70</x>
@@ -448,7 +448,7 @@ rgb:(86, 86, 86)</string>
          </rect>
         </property>
        </widget>
-       <widget class="QLineEdit" name="lineEdit_3">
+       <widget class="QLineEdit" name="confirmpassword_lineedit">
         <property name="geometry">
          <rect>
           <x>120</x>
