@@ -1,19 +1,23 @@
-from .database import Database
+from models.database import Database
 
 class UserModel:
     def __init__(self):
         self.db = Database()
 
-    def add_user(self, first_name, last_name, username, email, password, roles):
+    def add_user(self, first_name, last_name, username, email, password):
         query = """
-               INSERT INTO users (first_name, last_name, username, email, password, date_joined, roles)
-               VALUES (%s, %s, %s, %s, %s, NOW(), %s)
-           """
-        self.db.execute_query(query, (first_name, last_name, username, email, password, roles))
+            INSERT INTO users (first_name, last_name, username, email, password, date_joined)
+            VALUES (%s, %s, %s, %s, %s, NOW())
+        """
+        self.db.execute_query(query, (first_name, last_name, username, email, password))
 
-    def get_user_by_username(self, username):
-        query = "SELECT * FROM users WHERE username = %s"
-        return self.db.fetch_one(query, (username,))
+    def authenticate_user(self, username, password):
+        query = "SELECT * FROM users WHERE username = %s AND password = %s"
+        return self.db.fetch_one(query, (username, password))
+
+    def get_user_by_id(self, user_id):
+        query = "SELECT * FROM users WHERE id = %s"
+        return self.db.fetch_one(query, (user_id,))
 
     def update_user(self, user_id, first_name=None, last_name=None, email=None, password=None):
         query = "UPDATE users SET "
@@ -47,7 +51,6 @@ class UserModel:
 
     def delete_user(self, user_id):
         query = "DELETE FROM users WHERE id = %s"
-
         self.db.execute_query(query, (user_id,))
 
     def close(self):

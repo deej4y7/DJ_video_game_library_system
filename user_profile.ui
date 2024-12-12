@@ -483,7 +483,6 @@ font: 14pt &quot;Bahnschrift SemiLight Condensed&quot;;</string>
     </widget>
    </widget>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
   <include location="../video_game_library_system/resources/images.qrc"/>
